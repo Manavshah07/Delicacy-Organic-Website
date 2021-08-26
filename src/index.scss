@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@import "./sass/variable.scss";
+@import "./sass/responsive.scss";
+
+// GLOBAL
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: 'Poppins', sans-serif;
+  font-family: 'Playfair Display', serif;
+}
+a{
+  text-decoration: none;
+}
+
+// BUTTONS
+.btn {
+  font-size: 20px;
+  padding: 20px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  @include smallScreen {
+    
+  }
+}
+.btn-green {
+  background-color: $primaryColor;
+  color: #FFF;
+  border: solid 2px $primaryColor;
+  transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: #000;
+      border: solid 2px $primaryColor;
+    }
+}
+
+// HOME SECTION
+.home {
+  background-color: #f9f9f9;
+}
+.container {
+  padding: 90px 0;
+}
+
+.home-left {
+  margin-top: 110px;
+
+  & p{
+    font-size: 24px;
+    color: $primaryColor;
+    text-transform: uppercase;
+    font-weight: 500;
+    @include smallScreen{
+
+    }
+    
+  }
+
+  & h1{
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .m-b-50{
+    margin-bottom: 50px;
+  }
+}
+
+// OFFERS
+
+.offers {
+  margin: 50px 0;
+
+  .column {
+    display: flex;
+    margin-left: 100px;
+  }
+  .offer-text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+
