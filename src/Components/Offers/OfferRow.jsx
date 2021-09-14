@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../../images/home/discount.JPG";
-// import { Container, Grid, makeStyles } from '@material-ui/core';
+import { Container, Grid, makeStyles } from '@material-ui/core';
 
 const OfferRow = (props) => {
     return(

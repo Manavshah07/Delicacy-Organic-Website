@@ -19,6 +19,36 @@ a {
   font-weight: bold;
 }
 
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 650px) {
+  .btn {
+    font-size: 18px;
+    padding: 14px 24px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .btn {
+    font-size: 20px;
+    padding: 18px 28px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .btn {
+    margin-left: 50px;
+  }
+}
+
 .btn-green {
   background-color: #3bb312;
   color: #FFF;
@@ -41,8 +71,56 @@ a {
   padding: 90px 0;
 }
 
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .container {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 650px) {
+  .container {
+    padding: 30px 0;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .container {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .container {
+    padding: 70px 0;
+  }
+}
+
 .home-left {
-  margin-top: 110px;
+  margin-top: 90px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .home-left {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 650px) {
+  .home-left {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .home-left {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .home-left {
+    margin-top: 80px;
+  }
 }
 
 .home-left p {
@@ -52,13 +130,110 @@ a {
   font-weight: 500;
 }
 
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .home-left p {
+    font-size: 16px;
+    margin: 0 0 10px 30px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 650px) {
+  .home-left p {
+    font-size: 18px;
+    margin: 0 0 10px 30px;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .home-left p {
+    font-size: 20px;
+    margin: 0 0 10px 30px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .home-left p {
+    font-size: 24px;
+    margin: 0 0 10px 50px;
+  }
+}
+
 .home-left h1 {
   font-size: 60px;
   line-height: 1.2;
 }
 
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .home-left h1 {
+    font-size: 35px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 650px) {
+  .home-left h1 {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .home-left h1 {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .home-left h1 {
+    font-size: 55px;
+    margin-left: 50px;
+  }
+}
+
 .home-left .m-b-50 {
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .home-left .m-b-50 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 650px) {
+  .home-left .m-b-50 {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .home-left .m-b-50 {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .home-right img {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 650px) {
+  .home-right img {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .home-right img {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 .offers {
@@ -70,6 +245,30 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-left: 100px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .offers .column {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 650px) {
+  .offers .column {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 651px) and (max-width: 850px) {
+  .offers .column {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 851px) and (max-width: 1050px) {
+  .offers .column {
+    margin-left: 50px;
+  }
 }
 
 .offers .offer-text {

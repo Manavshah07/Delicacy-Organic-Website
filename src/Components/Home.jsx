@@ -1,8 +1,7 @@
 import React from "react";
-import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles'; 
-import Grid from '@material-ui/core/Grid';
+import { Container, Grid, makeStyles } from '@material-ui/core';
 import home from "../images/home/home.png";
+
 
 const Home = () => {
     return(

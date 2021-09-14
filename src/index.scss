@@ -15,6 +15,9 @@
 a{
   text-decoration: none;
 }
+i{
+  cursor: pointer;
+}
 
 // BUTTONS
 .btn {
@@ -22,52 +25,201 @@ a{
   padding: 20px 30px;
   border-radius: 30px;
   font-weight: bold;
+
   @include smallScreen {
-    
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+
+  @include mediumScreen{
+    font-size: 18px;
+    padding: 14px 24px;
+    margin-left: 30px;
+  }
+
+  @include largeScreen {
+    font-size: 20px;
+    padding: 18px 28px;
+    margin-left: 30px;
+  }
+  
+  @include extraLargeScreen{
+    margin-left: 50px;
   }
 }
 .btn-green {
   background-color: $primaryColor;
-  color: #FFF;
+  color: $lightColor;
   border: solid 2px $primaryColor;
   transition: all 0.3s ease-in-out;
 
     &:hover {
       background-color: transparent;
-      color: #000;
+      color: $darkColor;
       border: solid 2px $primaryColor;
+    }
+}
+
+.btn-orange {
+  background-color: $secondaryColor;
+  color: $lightColor;
+  border: solid 2px $secondaryColor;
+  transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      color: $darkColor;
+      border: solid 2px $secondaryColor;
     }
 }
 
 // HOME SECTION
 .home {
-  background-color: #f9f9f9;
+  background-color: $whiteColor;
 }
+
 .container {
   padding: 90px 0;
+
+  @include smallScreen{
+    padding: 30px 0;
+  }
+  
+  @include mediumScreen{
+    padding: 30px 0;
+  }
+
+  @include largeScreen{
+    padding: 50px 0;
+  }
+
+  @include extraLargeScreen{
+    padding: 70px 0;
+  }
+}
+
+.content-box-sm {
+  padding: 60px 0;
+
+  @include smallScreen{
+    padding: 20px 0;
+  }
+  
+  @include mediumScreen{
+    padding: 20px 0;
+  }
+
+  @include largeScreen{
+    padding: 40px 0;
+  }
+
+  @include extraLargeScreen{
+    padding: 60px 0;
+  }
 }
 
 .home-left {
-  margin-top: 110px;
+  margin-top: 90px;
+
+  @include smallScreen{
+    margin-top: 30px;
+  }
+
+  @include mediumScreen{
+    margin-top: 30px;
+  }
+
+  @include largeScreen{
+    margin-top: 50px;
+  }
+
+  @include extraLargeScreen{
+    margin-top: 80px;
+  }
 
   & p{
     font-size: 24px;
     color: $primaryColor;
     text-transform: uppercase;
     font-weight: 500;
-    @include smallScreen{
 
+    @include smallScreen{
+      font-size: 16px;
+      margin: 0 0 10px 30px;
+    }
+
+    @include mediumScreen {
+      font-size: 18px;
+      margin: 0 0 10px 30px;
     }
     
+    @include largeScreen{
+      font-size: 20px;
+      margin: 0 0 10px 30px;
+    }
+
+    @include extraLargeScreen{
+      font-size: 24px;
+      margin: 0 0 10px 50px;
+    }
   }
 
   & h1{
     font-size: 60px;
     line-height: 1.2;
+
+    @include smallScreen{
+      font-size: 35px;
+      margin-left: 30px;
+    }
+
+    @include mediumScreen {
+      font-size: 40px;
+      margin-left: 30px;
+    }
+
+    @include largeScreen{
+      font-size: 40px;
+      margin-left: 30px;
+    }
+
+    @include extraLargeScreen{
+      font-size: 55px;
+      margin-left: 50px;
+    }
   }
 
   .m-b-50{
     margin-bottom: 50px;
+
+    @include smallScreen{
+      margin-bottom: 40px;
+    }
+    @include mediumScreen{
+      margin-bottom: 40px;
+    }
+    @include extraLargeScreen{
+      margin-bottom: 50px;
+    } 
+  }
+}
+
+.home-right img {
+    
+  @include smallScreen {
+      width: 250px;
+      height: 250px;
+      margin-top: 30px;
+  }
+  @include mediumScreen {
+    width: 300px;
+    height: 300px;
+    margin-top: 30px;
+  }
+  @include largeScreen {
+    width: 350px;
+    height: 350px;
   }
 }
 
@@ -79,6 +231,21 @@ a{
   .column {
     display: flex;
     margin-left: 100px;
+
+    @include smallScreen {
+      margin-left: 40px;
+    }
+
+    @include mediumScreen {
+      margin-left: 60px;
+    }
+
+    @include largeScreen {
+      margin-left: 100px;
+    }
+    @include extraLargeScreen{
+      margin-left: 50px;
+    }
   }
   .offer-text {
     margin-top: 10px;
@@ -86,3 +253,990 @@ a{
   }
 }
 
+// HEADING
+.heading h1 {
+  font-size: 30px;
+
+  @include smallScreen {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  @include mediumScreen {
+    font-size: 24px;
+    margin-left: 30px;
+  }
+
+  @include largeScreen {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+
+  @include extraLargeScreen {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+}
+
+.heading h2{
+  color: $primaryColor;
+  font-size: 30px;
+  font-weight: bold;
+
+  @include smallScreen{
+    font-size: 20px;
+    margin-left: 30px;
+  }
+
+  @include mediumScreen{
+    font-size: 25px;
+    margin-left: 30px;
+  }
+
+  @include largeScreen {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+
+  @include extraLargeScreen {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+}
+
+// HOTTEST CATEGORIES
+.hottest-categories{
+  .column {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+
+    @include smallScreen{
+      display: block;
+    }
+
+    @include mediumScreen{
+      display: block;
+    }
+
+    @include largeScreen{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+
+    @include extraLargeScreen{
+      display: grid;
+      grid-template-columns: 3.5fr 1fr;
+    }
+  }
+
+  .hottest-categories-btn{
+    margin-top: 25px;
+  }
+
+  .hottest-items{
+    border-radius: 10px;
+    margin: 50px 20px 0 0;
+    padding: 20px 0;
+
+    @include smallScreen{
+      margin: 50px 20px 0 20px;
+    }
+
+    @include mediumScreen{
+      margin: 50px 20px 0 30px;
+    }
+
+    @include largeScreen{
+      margin: 50px 20px 0 30px;
+    }
+
+    @include extraLargeScreen{
+      margin: 50px 20px 0 20px;
+    }
+
+    &:nth-child(1){
+      background-color: $lightOrange;
+    }
+
+    &:nth-child(2){
+      background-color: $lightGreen;
+    }
+
+    &:nth-child(3){
+      background-color: $lightPink;
+    }
+
+    &:nth-child(4){
+      background-color: $lightBlue;
+    }
+
+    &:nth-child(5){
+      background-color: $lightYellow;
+    }
+
+    &:nth-child(6){
+      background-color: $lightOrange;
+    }
+
+    &:nth-child(7){
+      background-color: $lightGreen;
+    }
+
+    &:nth-child(8){
+      background-color: $lightBlue;
+    }
+
+    & img{
+      width: 250px;
+      margin-left: 30px;
+    }
+    
+    & h2{
+      text-align: center;
+      font-size: 24px;
+      padding-bottom: 5px;
+    }
+
+    & p{
+      text-align: center;
+      color: $GreyColor;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+// PRODUCTS 
+.products-card {
+  border: solid 0.5px $GreyColor;
+  padding: 20px;
+  margin: 50px 30px 50px 0;
+  border-radius: 10px;
+
+  @include smallScreen{
+    margin: 30px 0 50px 20px;
+  }
+
+  @include mediumScreen{
+    margin: 30px 0 50px 30px;
+  }
+
+  @include largeScreen{
+    margin: 50px 0 50px 30px;
+  }
+  @include extraLargeScreen{
+    margin: 50px 0 50px 30px;
+  }
+
+  // & h4 {
+  //   padding: 10px 20px;
+  //   background-color: $secondaryColor;
+  //   color: $lightColor;
+  //   // margin-bottom: 100px!important;
+  //   display: inline;
+  //   position: absolute;
+  //   left: 9.5%;
+  //   top: 99rem;
+  //   border-top-right-radius: 10px;
+  //   border-bottom-right-radius: 10px;
+  // }
+  
+  .like-icon i{
+    margin-left: 200px;
+    display: inline;
+    color: $GreyColor;
+  }
+
+  & img {
+    width: 180px;
+  }
+
+  & h5{
+    text-transform: uppercase;
+    color: $GreyColor;
+    padding-top: 10px;
+  }
+
+  & h3 {
+    font-size: 22px;
+    padding: 5px 0;
+    line-height: 0.9;
+  }
+
+  & p {
+    color: $secondaryColor;
+    font-size: 18px;
+    font-weight: 600;
+
+    & span {
+      color: $GreyColor;
+      font-size: 14px;
+    }
+  }
+
+  .quantity{
+    margin-top: 20px;
+    border: solid 2px $GreyColor;
+    border-radius: 5px;
+    display: inline-flex;
+
+    .btn-quantity{
+       
+      i {
+        padding: 10px 15px;
+      }
+
+      & span {
+        font-size: 16px;
+        background-color: $GreyColor;
+        font-weight: bolder;
+        padding: 8px 20px;
+      }
+    }
+  }
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart i {
+    background-color: $primaryColor;
+    color: $lightColor;
+    padding: 15px;
+    border-radius: 50%;
+    transform: translateY(10px);
+    // margin-top: 20px;
+  }
+}
+
+
+// ABOUT
+.about{
+  padding: 50px 0;
+
+  .about-left img{
+
+    @include smallScreen{
+      width: 300px;
+    }
+    @include mediumScreen{
+      width: 350px;
+    }
+    @include largeScreen{
+      width: 400px;
+      margin-right: 20px;
+    }
+  }
+
+  .about-right {
+    margin-top: 40px;
+
+    @include smallScreen{
+      margin-top: 20px;
+    }
+    @include mediumScreen{
+      margin-top: 20px;
+    } 
+    @include largeScreen{
+      margin-top: 20px;
+    }
+    @include extraLargeScreen{
+      margin-top: 40px;
+    }
+    
+
+    span{
+      color: $primaryColor;
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+    h1{
+      margin: 10px 0;
+      font-size: 40px;
+
+      @include smallScreen{
+        font-size: 28px;
+      }
+      @include mediumScreen{
+        font-size: 32px;
+      }
+      @include largeScreen{
+        font-size: 30px;
+      }
+      @include extraLargeScreen{
+        font-size: 40px;
+      }
+
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.7;
+      margin: 10px 0 50px 0;
+
+      @include smallScreen{
+        font-size: 15px;
+      }
+      @include mediumScreen{
+        font-size: 15px;
+      }
+      @include largeScreen{
+        font-size: 16px;
+      }
+      @include extraLargeScreen{
+        font-size: 18px;
+      }
+    }
+    .btn{
+      @include smallScreen{
+        margin-left: 0;
+      }
+      @include mediumScreen{
+        margin-left: 0;
+      }
+      @include largeScreen{
+        margin-left:0 ;
+      }
+      @include extraLargeScreen{
+        margin-left:0 ;
+      }
+    }
+  }
+}
+
+
+// ACHIEVEMENTS
+.achievements{
+  background-color: $darkColor;
+  padding: 90px 0;
+  margin-bottom: 50px;
+
+  .achievement-flex{
+    display: flex;
+    margin-left: 10px;
+    z-index: 9999;
+
+    .achievements-no{
+      margin-top: 20px;
+      color: #FFF;
+
+      p{
+        font-size: 35px;
+        font-weight: 600;
+
+        span{
+          color: $secondaryColor;
+          font-weight: bolder;
+        }
+      }
+
+      h5{
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+// TESTIMONIAL
+.testimonial {
+  margin: 50px 0;
+  
+  
+  .heading h1{
+    text-align: center;
+  }
+
+  .testimonial-card{
+    width: 350px;
+    border-bottom: 10px solid $primaryColor;
+    padding: 30px;
+    box-shadow: 5px 2px 20px 5px rgba(0, 0, 0, 0.1);
+    margin: 50px 0 0 50px;
+
+    @include smallScreen{
+      margin: 50px 0 0 10px;
+    }
+
+    @include mediumScreen{
+      margin: 50px 0 0 15px;
+    }
+
+    @include largeScreen{
+      margin: 50px 0 0 10px;
+    }
+
+    @include extraLargeScreen{
+      margin: 50px 0 0 70px;
+    }
+
+    & h6{
+      color: $primaryColor;
+      font-size: 30px;
+      font-weight: 600;
+      padding: 5px 0;
+    }
+
+    .like-icon i {
+      color: gold;
+      padding: 5px 5px 0px 0;
+    }
+
+    p{
+      font-size: 16px;
+      margin: 20px 0;
+      line-height: 1.7;
+    }
+
+    .testimonial-column {
+      display: flex;
+
+      .testimonial-desc {
+        margin-top: 25px;
+
+        & h3{
+          font-size: 20px;
+        }
+
+        & h5{
+          color: $GreyColor;
+          font-size: 16px;
+          padding: 5px 0;
+
+          & span{
+            color: #232323;
+          }
+        }
+      }
+    }
+  }
+}
+
+// POPULAR PRODUCTS
+.popular-products{
+  background-color: #f1f1f1;
+  padding: 80px 0;
+
+  .heading h1{
+    text-align: center;
+    font-size: 35px;
+
+    span{
+      color: $primaryColor;
+    }
+  }
+
+  .products-card{
+    background-color: #FFF;
+    border: none;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// BLOG
+.blog {
+  margin: 80px 0 30px 0;
+
+  .heading h1{
+    text-align: center;
+  }
+  .blog-card{
+    margin: 50px 0 0 50px;
+
+    @include smallScreen {
+      margin: 50px 20px 0 0px;
+    }
+
+    @include mediumScreen {
+      margin: 50px 0px 0 20px;
+    }
+
+    @include largeScreen {
+      margin: 50px 0px 0 10px;
+    }
+
+    @include extraLargeScreen {
+      margin: 50px 0px 0 50px;
+    }
+
+    & img{
+      width: 350px;
+      border-radius: 10px;
+    }
+
+    .blog-inner-card {
+      width: 300px;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      background-color: $lightColor;
+      border-radius: 10px;
+      padding: 20px;
+      margin-left: 25px;
+      transform: translateY(-70px);
+
+      .blog-info {
+        margin: 10px 0;
+        & i{
+          color: $primaryColor;
+          padding-right: 10px;
+        }
+        & span{
+          color: $GreyColor;
+        }
+        .line {
+          margin: 0 10px;
+        }
+      }
+      & h3{
+        padding-top: 10px;
+        font-size: 24px;
+      }
+      & h2 {
+        padding-bottom: 20px;
+        border-bottom: 1px solid $GreyColor;
+      }
+      .read-more-btn {
+        margin: 10px 0;
+
+        & a{
+          color: $darkColor;
+          font-weight: 500;
+        }
+
+        & span {
+          color: $primaryColor;
+        }
+      }
+      .chats {
+        margin: 10px 0 10px 120px;
+
+        & i{
+          color: $secondaryColor;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+// CLIENT
+.client {
+  margin: 50px 0;
+
+  .heading h1{
+    text-align: center;
+  }
+  .our-client{
+    margin-top: 50px;
+
+    & img {
+      width: 300px;
+    }
+  }
+}
+
+// FOOTER 
+.footer {
+
+  .footer-bg {
+    background-color: $lightOrange;
+    padding: 70px 50px;
+    border-radius: 30px;
+
+    .footer-address p {
+      font-size: 20px;
+      color: $GreyColor;
+      line-height: 1.4;
+      margin-left: 25px;
+
+      @include smallScreen{
+        font-size: 16px;
+        margin-left: 0;
+      }
+
+      @include mediumScreen{
+        font-size: 16px;
+        margin-left: 0;
+      }
+    }
+
+    .footer-social-links .social-icon {
+      margin-left: 25px;
+      
+        @include smallScreen{
+          margin-left: 10px;          
+        }
+
+        @include mediumScreen{
+          margin-left: 10px;          
+        }
+
+        & i{ 
+          color: $primaryColor;
+          background-color: $lightColor;
+          padding: 15px;
+          font-size: 20px;
+          border-radius: 50%;
+          margin-top: 20px;
+          transition: 0.3s all ease-in-out;
+          cursor: pointer;
+
+          &:hover{
+            color: $lightColor;
+            background-color: $primaryColor;
+          }
+        }
+    }
+    .footer-categories {
+      margin: 20px 0 0 80px;
+
+      @include smallScreen {
+        margin: 20px 0 0 0px;
+      }
+
+      @include mediumScreen {
+        margin: 20px 0 0 0px;
+      }
+
+      & h3 {
+        font-size: 26px;
+      }
+      & p {
+        color: $GreyColor;
+        padding-top: 20px;
+      }
+    }
+    .footer-newsletter{
+      margin: 20px 0 0 80px;
+
+      @include smallScreen {
+        margin: 20px 0 0 0px;
+      }
+
+      @include mediumScreen {
+        margin: 20px 0 0 0px;
+      }
+
+      & h3{
+        font-size: 26px;
+      }
+
+      & p{
+        color: $GreyColor;
+        padding-top: 20px;
+      }
+
+      & span{
+        display: block;
+        color: $GreyColor;
+        padding-top: 10px;
+      }
+      .p-t-20{
+        padding-top: 20px;
+      }
+    }
+  }
+  .footer-bottom {
+    padding: 30px;
+
+    .footer-column {
+      display: flex;
+      justify-content: space-between;
+
+      @include smallScreen{
+        display: block;
+        text-align: center;
+      }
+
+      @include mediumScreen{
+        display: block;
+        text-align: center;
+      }
+
+      .delicacy-year p {
+        color: $GreyColor;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .footer-policy p {
+        color: $GreyColor;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
+
+// DELICACY APP
+.delicacy-app {
+
+  .delicacy-app-bg {
+    background-color: $primaryColor;
+    margin: 100px 0;
+    padding-top: 80px;
+    border-radius: 20px;
+
+    @include smallScreen{
+      padding-top: 50px;
+    }
+
+    @include mediumScreen{
+      padding-top: 50px;
+    }
+
+    .delicacy-desc {
+      margin: 30px 0 0 100px;
+
+      @include smallScreen{
+        margin: 10px 10px 0 10px;
+      }
+
+      @include mediumScreen{
+        margin: 10px 10px 0 10px;
+      }
+
+      & h1 {
+        color: #FFF;
+        font-size: 50px;
+        line-height: 1.2;
+
+        @include smallScreen{
+          font-size: 30px;
+        }
+
+        @include mediumScreen{
+          font-size: 35px;
+        }
+
+        @include extraLargeScreen{
+          font-size: 50px;
+        }
+      }
+
+      & p {
+        color: #FFF;
+        line-height: 1.5;
+        font-size: 20px;
+
+        @include smallScreen{
+          font-size: 14px;
+        }
+      }
+      .m-t-30 {
+        margin-top: 30px;
+      }
+      .delicacy-column {
+        display: flex;
+        margin: 20px 20px 20px 0px;
+
+        .dark-color{
+          background-color: $darkColor;
+          padding: 10px;
+          border-radius: 10px;
+        }
+
+        .app-logo i{ 
+          color: $lightColor;
+          margin: 20px 10px 0 0;
+        }
+        .app-desc {
+          margin-top: 20px;
+
+          & p{
+            font-size: 14px;
+          }
+
+          & h3{
+            color: $lightColor;
+            font-size: 22px;
+
+            @include smallScreen{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .delicacy-img img{
+      margin-left: 70px;
+
+      @include smallScreen{
+        margin-left: 0;
+        width: 330px;
+      }
+
+      @include mediumScreen{
+        margin-left: 0;
+        width: 400px;
+      }
+
+      @include extraLargeScreen{
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+// NAVBAR
+.navbar {
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0 , 0.15);
+  background-color: #FFF;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  .menu {
+    display: flex;
+    list-style-type: none;
+    margin: 40px 0 0 50px;
+
+    & li {
+      margin-left: 40px;
+      font-weight: 500;
+      cursor: pointer;
+
+      :hover{
+        color: $secondaryColor;
+        border-bottom: 2px solid $secondaryColor;
+      }
+    }
+  }
+  .phone-number{
+    margin: 40px 0 0 100px;
+
+    & i{
+      color: $secondaryColor;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    & span{
+      font-weight: 500;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+  .hamburger-menu{
+    display: none;
+  }
+}
+
+@media  (max-width: 998px) {
+  .navbar{
+    .menu {
+      display: none;
+      margin: 0;
+
+      & li {
+        padding: 10px;
+        margin-left: 100px;
+        text-align: center;
+      }
+
+      .mobile-menu-link {
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+      }
+    
+      .mobile-menu-link {
+        background-color: white;
+        height: 20rem;
+        display: grid;
+        grid-column: 2/5;
+        align-items: center;
+        padding-left: 3rem;
+        transition: all 2s linear;
+        transform-origin: top;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      }
+      .mobile-menu-link ul {
+        height: 20rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: start;
+      }
+      .mobile-menu-link ul li:first-child {
+        transition-delay: 0.2s;
+      }
+    }
+    .logo img{
+      width: 150px;
+    }
+    .phone-number{
+      margin: 20px 0 20px 80px;
+      display: none;
+    }
+    .hamburger-menu{
+      display: block;
+      font-size: 20px;
+      color: #000!important;
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+  }
+
+  
+} 
+
+// @include mobileScreen {
+//   .navbar{
+
+//     .menu {
+//       display: none;
+//       margin: 0;
+
+//       & li {
+//         padding: 10px;
+//         margin-left: 100px;
+//         text-align: center;
+//       }
+//     }
+//     .logo img{
+//       width: 150px;
+//     }
+//     .phone-number{
+//       margin: 20px 0 20px 80px;
+//       display: none;
+//     }
+//     .hamburger-menu{
+//       display: block;
+//       font-size: 20px;
+//       color: #000!important;
+//       position: absolute;
+//       right: 30px;
+//       top: 20px;
+//     }
+//   }
+
+//   .mobile-menu-link {
+//     grid-column: 2/4;
+//     position: relative;
+//     z-index: 99;
+//   }
+
+//   .mobile-menu-link {
+//     background-color: white;
+//     height: 20rem;
+//     display: grid;
+//     grid-column: 2/5;
+//     align-items: center;
+//     padding-left: 3rem;
+//     transition: all 2s linear;
+//     transform-origin: top;
+//     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+//       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+//   }
+//   .mobile-menu-link ul {
+//     height: 20rem;
+//     display: flex;
+//     justify-content: space-around;
+//     flex-direction: column;
+//     align-items: start;
+//   }
+//   .mobile-menu-link ul li:first-child {
+//     transition-delay: 0.2s;
+//   }
+// }
