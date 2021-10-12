@@ -23,12 +23,6 @@
     }
 }
 
-@mixin mobileScreen {
-    @media (max-width: 998px) {
-        @content
-    }
-}
-
 @mixin desktopScreen   {
     @media screen and (max-width: 1250px) {
         @content
